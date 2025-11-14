@@ -1,7 +1,7 @@
 {
   "name": "zod3-to-json-schema",
   "version": "4.0.0",
-  "description": "Converts Zod schemas to Json Schemas",
+  "description": "Converts Zod 3 schemas to Json Schemas",
   "types": "./dist/types/index.d.ts",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",

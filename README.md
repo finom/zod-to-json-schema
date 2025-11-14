@@ -1,7 +1,7 @@
-# Zod to Json Schema
+# Zod 3 to Json Schema
 
-[![NPM Version](https://img.shields.io/npm/v/zod-to-json-schema.svg)](https://npmjs.org/package/zod-to-json-schema)
-[![NPM Downloads](https://img.shields.io/npm/dw/zod-to-json-schema.svg)](https://npmjs.org/package/zod-to-json-schema)
+[![NPM Version](https://img.shields.io/npm/v/zod3-to-json-schema.svg)](https://npmjs.org/package/zod3-to-json-schema)
+[![NPM Downloads](https://img.shields.io/npm/dw/zod3-to-json-schema.svg)](https://npmjs.org/package/zod3-to-json-schema)
 
 _Looking for the exact opposite? Check out [json-schema-to-zod](https://npmjs.org/package/json-schema-to-zod)_
 
@@ -64,8 +64,8 @@ A great big thank you to our amazing sponsors! Please consider joining them thro
 ### Basic example
 
 ```typescript
-import { z } from "zod";
-import { zodToJsonSchema } from "zod-to-json-schema";
+import { z } from "zod/v3";
+import { zodToJsonSchema } from "zod3-to-json-schema";
 
 const mySchema = z
   .object({
@@ -252,7 +252,7 @@ This options takes a callback receiving a Zod schema definition, the current ref
 Important: if you don't want to override the current item you have to return the `ignoreOverride` symbol exported from the index. This is because `undefined` is a valid option to return when you want the property to be excluded from the resulting JSON schema.
 
 ```typescript
-import zodToJsonSchema, { ignoreOverride } from "zod-to-json-schema";
+import zodToJsonSchema, { ignoreOverride } from "zod3-to-json-schema";
 
 zodToJsonSchema(
   z.object({
@@ -304,7 +304,7 @@ Expected output:
 Besided receiving all arguments of the `override` callback, the `postProcess` callback also receives the generated schema. It should always return a JSON Schema, or `undefined` if you wish to filter it out. Unlike the `override` callback you do not have to return `ignoreOverride` if you are happy with the produced schema; simply return it unchanged.
 
 ```typescript
-import zodToJsonSchema, { PostProcessCallback } from "zod-to-json-schema";
+import zodToJsonSchema, { PostProcessCallback } from "zod3-to-json-schema";
 
 // Define the callback to be used to process the output using the PostProcessCallback type:
 const postProcess: PostProcessCallback = (
@@ -350,7 +350,7 @@ Adding support for examples and other JSON Schema meta keys are among the most c
 Simply stringify whatever you want added to the output schema as the description, then import and use `jsonDescription` as the postProcess option:
 
 ```typescript
-import zodToJsonSchema, { jsonDescription } from "zod-to-json-schema";
+import zodToJsonSchema, { jsonDescription } from "zod3-to-json-schema";
 
 const zodSchema = z.string().describe(
   JSON.stringify({
@@ -396,4 +396,4 @@ I will do my best to keep API-breaking changes to an absolute minimum, but new f
 
 ## Changelog
 
-https://github.com/StefanTerdell/zod-to-json-schema/blob/master/changelog.md
+https://github.com/StefanTerdell/zod3-to-json-schema/blob/master/changelog.md
