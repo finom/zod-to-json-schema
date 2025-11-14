@@ -1,7 +1,7 @@
 # Zod 3 to Json Schema
 
 [![NPM Version](https://img.shields.io/npm/v/zod3-to-json-schema.svg)](https://npmjs.org/package/zod3-to-json-schema)
-[![NPM Downloads](https://img.shields.io/npm/dw/zod3-to-json-schema.svg)](https://npmjs.org/package/zod3-to-json-schema)
+[![NPM Downloads](https://img.shields.io/npm/dw/zod3-to-json-schema.svg)](https://npmjs.org/package/zod3-to-json-schema) [![CI](https://github.com/finom/zod3-to-json-schema/actions/workflows/main.yml/badge.svg)](https://github.com/finom/zod3-to-json-schema/actions/workflows/main.yml)
 
 _Looking for the exact opposite? Check out [json-schema-to-zod](https://npmjs.org/package/json-schema-to-zod)_
 
