@@ -1,5 +1,5 @@
 {
-  "name": "zod3-to-json-schema",
+  "name": "zod-v3-to-json-schema",
   "version": "4.0.0",
   "description": "Converts Zod 3 schemas to Json Schemas",
   "types": "./dist/types/index.d.ts",
